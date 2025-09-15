@@ -1,0 +1,8 @@
+title: My Porfolio 
+name: Kendra Siergjuk 
+Email: w0854092@myscc.ca
+
+collecton: 
+  design: 
+    output: true
+    permalink: :/collection/:path/
