@@ -1,9 +1,8 @@
 .container {
 	width: 1920px;
-	height: 8100px;
+	height: 4500px;
 	margin-left: auto;
   	margin-right: auto;
-	align-content: center;
 	background-color: #FFB199;
 	padding:80px;
 	
@@ -24,5 +23,73 @@ p {
 
 .title {
 	text-align: center;
+}
 
+.colorpalette {
+	width: 1000px;
+	height: 200px;
+	display: flex;
+	padding: 25px;
+}
+
+#primary {
+	background-color:#FFD7DC;
+	width: 200px;
+	height: 200px;
+		
+}
+
+#secondairy {
+	background-color:#E97B7D;
+	width: 200px;
+	height: 200px;
+}
+
+#tetiary {
+	background-color: #A72A2F;
+	width: 200px;
+	height: 200px;
+}
+
+#accent {
+	background-color: #F0415E;
+	width: 200px;
+	height: 200px;
+}
+
+#type {
+	color:white;
+	padding: 25px;
+}
+
+#typetitle {
+	font-size: 30px;
+}
+
+#typeexample{
+	font-size: 20px
+}
+
+.passion{
+	font-family:  Passion one, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+.jarkarta {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+}
+
+th {
+	padding: 10px
+}
+
+#mainlogo {
+	width: 600px;
+	height: 200px
+}
+
+.logovar {
+	align-content: center;
+	height: 250px;
+	width: 350px;
+	padding: 10px;
 }
