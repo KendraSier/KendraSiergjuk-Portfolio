@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+/*
+.jomhuria-regular {
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+
+
+#navbar{
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	background-color: #334074;
+	height: 20%;
+	padding: 35px;
+	z-index: 100;
+}
+
+#navbar a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 10px;
+	text-decoration: none;
+	background-color: #FABFC1;
+	border-radius: 20px;
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+.container{
+	background-color: #938EB6;
+	align-content: center;
+}
+
+header {
+	font-family: "Jomhuria", serif;
+  	font-weight: 400;
+ 	font-style: normal;
+	color:white;
+	font-size: 240px;
+	text-align: center;
+	
+}
+
+h1, h2 {
+	font-size: 190px;
+	padding: 20px;
+	text-align: center;
+	color: white;
+	font-family: "Jomhuria", serif;
+  	font-weight: 400;
+ 	font-style: normal;
+	
+}
+
+#portbutton {
+	position: absolute;
+	top:350px;
+	left:50%;
+	transform: translate(-50%, -50%);
+	background-color: #FABFC1;
+	border-radius: 15px;
+}
+
+#secondcontainer{
+	text-align: center;
+}
+
+.imgbox {
+	padding: 20px;
+	background-color:#FABFC1;
+	border-radius: 25px;
+	margin: 10px;
+}
