@@ -25,6 +25,7 @@ nav {
 	border-bottom: 2.5px solid #5666A6;
 	position: sticky;
 	top: 0;
+	z-index: 500;
 }
 nav list{
 	display: flex;
@@ -108,19 +109,49 @@ h1, h2 {
 	color: #FFD6C5;
 }
 
-
-
-
-
-
-
-
 .line{
 	background-color: #334074;
 	border-radius: 5px;
 	width: 100%;
 	height: 1.5em;
 	margin-top: 1.2em;
+}
+
+/* SLIDER BAR */
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+.swiper-wrapper{
+	display: flex;
+	height: 700px;
+}
+.swiper-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.swiper{
+	width:100%;
+	padding:50px 0;
+}
+.swiper-slide{
+	width:500px;
+}
+.swiper-slide img{
+	position:relative;
+	width: 500px;
+	height: 500px;
+	aspect-ratio: 3/4;
+	border-radius: 14px;
+	border: 3px solid #334074;
+	object-fit: cover;
+	
+	display:block;
+	user-select: none;
 }
 
 
@@ -130,10 +161,10 @@ h1, h2 {
 
 
 
-@media (min-width: 0px) and (max-width: 700px){
+
+	@media (min-width: 0px) and (max-width: 700px){	
 	#open-sidebar-button{
 		display: block;
-		position: sticky;
 		top:0px;
 		opacity: 65%;
 	}
@@ -173,7 +204,8 @@ h1, h2 {
 	nav a{
 		padding: 1em 3.5em;
 	}
-}
+	
 /* NAVBAR ABOVE DONT TOUCH */
 
 
+}
