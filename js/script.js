@@ -32,9 +32,23 @@ function closeSidebar(){
 
 updateNavbar(media)
 
-//NAVBAR
+//NAVBAR ABOVE
 
 
+// IMAGE SLIDE SHOW
+//const swiper = new Swiper('.swiper', {
+//	direction: 'vertical',
+//	loop:true,
+//	
+//	navigation: {
+//		nextEl: '.swipper-button-next',
+//		prevEl: 'swiper-button-prev'
+//	},
+//	
+//	scrollbar: {
+//		el: '.swiper-scrollbar',
+//	},
+//});
 
 var swiper = new Swiper(".swiper",{
 	effect: "coverflow",
@@ -42,8 +56,21 @@ var swiper = new Swiper(".swiper",{
 	centeredSlides:true,
 	initialSlides: 2,
 	speed: 600,
+	loop: true,
 	preventClick: true,
 	slidesPerView: "auto",
+	
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	scrollbar: {
+		el: '.swiper-scrollbar',
+	},
+	
 	coverflowEffect: {
 		rotate: 0,
 		stretch: 80,
@@ -51,12 +78,10 @@ var swiper = new Swiper(".swiper",{
 		modifier: 1,
 		slideShadows: true,
 		},
+	
 	on: {
 		click(event) {
 			swiper.slideTo(this.clickedIndex)
 		},
 	},
-	pagination: {
-	el: ".swiper-pagination"
-	},
-})
+});

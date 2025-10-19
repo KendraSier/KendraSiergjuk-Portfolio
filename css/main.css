@@ -89,6 +89,7 @@ header {
 	color:white;
 	font-size: 13.5em;
 	text-align: center;
+	padding-top:50px;
 }
 #banner{
 	border-radius: 20px;
@@ -107,6 +108,13 @@ h1, h2 {
 }
 #yellowtext{
 	color: #FFD6C5;
+	margin-bottom: -2.5%;
+}
+#highlight {
+	background-color: #7C72C2;
+	border-radius: 20px;
+	padding-bottom: 35px;
+	padding-top: 35px;
 }
 
 .line{
@@ -125,13 +133,17 @@ h1, h2 {
 }
 .swiper-wrapper{
 	display: flex;
-	height: 700px;
+	align-items: center;
+	height: 600px;
+	padding: 25px;
 }
 .swiper-container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	margin: 15px;
+	border-radius: 20px;
+	height: 600px;
 	overflow: hidden;
 }
 .swiper{
@@ -139,7 +151,7 @@ h1, h2 {
 	padding:50px 0;
 }
 .swiper-slide{
-	width:500px;
+	width:700px;
 }
 .swiper-slide img{
 	position:relative;
@@ -147,11 +159,33 @@ h1, h2 {
 	height: 500px;
 	aspect-ratio: 3/4;
 	border-radius: 14px;
-	border: 3px solid #334074;
+	border: 5px solid #334074;
 	object-fit: cover;
 	
 	display:block;
 	user-select: none;
+}
+.arrows{
+	align-content: center;
+	width: 200px;
+	height: 100px;
+	margin: auto;
+}
+.swiper-button-prev {
+	width: 50px;
+	float: left;
+	height: 100%;
+	margin: auto;
+}
+.swiper-button-prev svg{
+	transform: scale(-1);
+}
+.swiper-button-next {
+	width: 50px;
+	float: right;
+	height: 100%;
+	position: relative;
+	top: -2px;
 }
 
 
@@ -167,6 +201,8 @@ h1, h2 {
 		display: block;
 		top:0px;
 		opacity: 65%;
+		position: sticky;
+		z-index: 499;
 	}
 	#close-sidebar-button{
 		display: block;
@@ -203,9 +239,24 @@ h1, h2 {
 	}
 	nav a{
 		padding: 1em 3.5em;
-	}
-	
+	}	
 /* NAVBAR ABOVE DONT TOUCH */
-
-
+	
+	#yellowtext{
+	margin-bottom: -35%;
+	}
+	.swiper{
+	padding: 5px;
+	height: 500px;
+	}
+	.swiper-slide img{
+	position:relative;
+	width: 350px;
+	height: 350px;
+	}
+	.arrows{
+	margin: auto;
+	position:relative;
+	top:-70px;
+	}
 }
