@@ -194,13 +194,22 @@ h1, h2 {
 	margin-top: 5%;
 }
 .more-options{
-	height: 1500
+	height: 1500;
+	align-content: center;
+	margin: 20px;
 }
-.all-images{
-	display: flex;
+.all-images{ /*flex*/
 	align-items: center;
 	height: 450px;
-	padding: 40px;
+	padding: 1%;
+	align-content: center;
+}
+
+.actually-all-images{
+	justify-content: center;
+	display:flex;
+	width: 100%;
+	margin: 2%;
 }
 .images-with-text img{
 	position:relative;
@@ -211,17 +220,48 @@ h1, h2 {
 	object-fit: cover;
 	overflow: hidden;
 }
+.images-with-text{
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+.images-with-text .special-button{
+	position: absolute;	
+}
+
+.special-button{
+	z-index: 100;
+	display: block;
+	width: 12%;
+	height:34px;
+	border-radius: 18px;
+}
 
 
+/*
+button:hover .special-button{
+	display: block;
+	filter: drop-shadow(0 0 10px 
+	#FABFC1);
+}
+*/
 
 
-	@media (min-width: 0px) and (max-width: 700px){	
+@media (min-width: 0px) and (max-width: 700px){	/* Good up until 365*/
+	header {
+	font-family: "Jomhuria", serif;
+  	font-weight: 400;
+	color:white;
+	font-size: 120px;
+	text-align: center;
+	padding-top:20px;
+}
+	
 	#open-sidebar-button{
 		display: block;
 		top:0px;
 		opacity: 65%;
 		position: sticky;
-		z-index: 499;
+		z-index: 300;
 	}
 	#close-sidebar-button{
 		display: block;
@@ -232,9 +272,9 @@ h1, h2 {
 		right:-100%;
 		height: 100vh;
 		width: min(15em 100%);
-		z-index: 10;
 		border-left: 1px solid #5B73D0;
 		transition: right 300ms ease-out;
+		z-index: 301;
 	}
 	nav.show{
 		right: 0;
@@ -278,7 +318,9 @@ h1, h2 {
 	.arrows{
 	margin: auto;
 	position:relative;
-	top:-70px;
+	}
+	.swiper-container{
+		height: 400px;
 	}
 }
 /* IMAGE SLIDES ABOVE */
